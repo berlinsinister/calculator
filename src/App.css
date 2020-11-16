@@ -1,0 +1,106 @@
+:root {
+    --size: 75px;
+}
+
+body {
+    background-color: #9a958e;
+    font-family: 'Manrope';
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: calc(var(--size)*4);
+    height: calc(var(--size)/2);
+    background-color: #fbfbfb;
+    color: #9a958e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+.input {
+    width: calc(var(--size)*4);
+    height: calc(var(--size) + var(--size)/4);
+    background-color: #fbfbfb;
+    color: black;
+    font-size: 48pt;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+.cols-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    background: linear-gradient(135deg, #4b5063, #22262f);
+    width: 20px;
+}
+
+.right {
+    display: flex;
+    background: linear-gradient(135deg, #3b404e, #1a1d21);
+    width: 20px;
+    overflow: visible;
+}
+
+.pads {
+    width: calc(var(--size)*4);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #585e71, #23252d);
+    padding: 20px;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    width: var(--size);
+    height: var(--size);
+    color: white;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: border-bottom, .5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.equals {
+    color: white;
+    font-size: 24pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff8a4e, #f73711);
+    height: var(--size);
+    width: calc(var(--size)*4);
+    padding: 0px 20px;
+}
+
+.equals:hover {
+    background: linear-gradient(45deg, #fd7d3d, #ee2800);
+    cursor: pointer;
+}
